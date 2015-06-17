@@ -1,0 +1,84 @@
+body{
+    margin:10px;
+    background: white;
+}
+.header {
+    height:50px;
+    #background:black;
+    #border:1px solid #CCC;
+    width:50%;
+    margin-left: auto;
+    margin-right: auto;
+    font-weight: bold;	
+    font-size: 50px;
+}
+.content {
+    width:960px;
+    background:#f1f2f7;
+    height: 2000px;
+    margin: 20px auto;
+}
+
+.logincontainer {
+    margin-left:30%;
+    width:50%;
+}
+
+.checkbox{
+    margin-top:20px;
+}
+
+.button{
+	margin-top:10px;
+	margin-bottom:10px;
+	width: 100px;
+	height: 20px;	
+}
+.footer {
+    height:50px;
+    width:50%;
+    margin-left: 30%;
+    margin-right: auto;
+    margin-top: 100px;
+}
+.sidebar{
+	list-style-type: none;
+	float:left;
+	width: auto;
+	margin-right: 20px;
+	margin-top: 50px;
+	font-size: 15px;
+	text-transform: uppercase;
+}
+
+
+#sidemenu li{
+	margin-top: 10px;
+	border:1px solid #CCC;
+}
+
+a:link {
+    text-decoration: none;
+}
+
+a:visited {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+a:active {
+    text-decoration: underline;
+}
+
+.homepagecontainer{
+	margin-top: 50px;
+	margin-left: 100px;
+	float: left;
+}
+
+.fileupload{
+	margin-top: 10px;	
+}

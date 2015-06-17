@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<web-app xmlns:web="http://xmlns.jcp.org/xml/ns/javaee">
+  <display-name>Spring Web Flow</display-name>
+  <servlet>
+		<servlet-name>login</servlet-name>
+		<servlet-class>org.springframework.web.servlet.DispatcherServlet</servlet-class>
+		<init-param>
+			<param-name>contextConfigLocation</param-name>
+			<param-value>
+				/WEB-INF/config/login-servlet-config.xml
+				/WEB-INF/config/login-webflow-config.xml
+				/WEB-INF/config/spring-config.xml
+				/WEB-INF/config/spring-datasource.xml
+				/WEB-INF/config/spring-dao.xml
+			</param-value>
+		</init-param>
+		<load-on-startup>1</load-on-startup>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>login</servlet-name>
+		<url-pattern>/</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+	<servlet-name>default</servlet-name>
+	<servlet-class>org.apache.catalina.servlets.DefaultServlet</servlet-class>
+	<init-param>
+		<param-name>debug</param-name>
+		<param-value>0</param-value>
+	</init-param>
+	<init-param>
+		<param-name>listings</param-name>
+		<param-value>false</param-value>
+	</init-param>
+	<load-on-startup>1</load-on-startup>
+</servlet>
+
+  	<servlet-mapping>
+	  <servlet-name>default</servlet-name>
+	  <url-pattern>*.css</url-pattern>
+ </servlet-mapping>
+
+ <servlet-mapping>
+    <servlet-name>default</servlet-name>
+    <url-pattern>*.js</url-pattern>
+ </servlet-mapping>
+
+<servlet-mapping>
+    <servlet-name>default</servlet-name>
+    <url-pattern>*.jpg</url-pattern>
+ </servlet-mapping>
+ 
+ <servlet-mapping>
+    <servlet-name>default</servlet-name>
+    <url-pattern>*.png</url-pattern>
+ </servlet-mapping>
+</web-app>
